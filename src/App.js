@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Bidder1 from './High Order Component/Bidder1';
+import Bidder2 from './High Order Component/Bidder2';
+import ParentComp from './PureComponentExample/ParentComp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>PureComponent Example</h1>
+      <ParentComp />
+      <br/><br/><br/>
+      <h1>Auction HOC Example</h1>
+      <Bidder1 />
+      <br/><br/>
+      <Bidder2 />
     </div>
   );
 }
